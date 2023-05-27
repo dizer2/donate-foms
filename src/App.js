@@ -7,7 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      <Popup />
+      <Popup title="Support Armed Forces of span Ukraine"/>
+      
     </div>
   );
 }

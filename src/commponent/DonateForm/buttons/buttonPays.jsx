@@ -1,7 +1,7 @@
 import React from 'react'
-import Input from './input';
+import Input from '../inputs/input';
 
-function DonateForm({donateInfo}) {
+function ButtonPays({donateInfo}) {
   return (
     <div className="donate__form">
 
@@ -23,4 +23,4 @@ function DonateForm({donateInfo}) {
   )
 }
 
-export default DonateForm;
+export default ButtonPays;

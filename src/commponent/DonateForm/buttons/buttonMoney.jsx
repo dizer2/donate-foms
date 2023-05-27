@@ -1,4 +1,5 @@
 import React from 'react'
+import "./donate.css"
 
 const ButtonMoney = ({ numbers }) => {
 	return (
@@ -6,7 +7,6 @@ const ButtonMoney = ({ numbers }) => {
 		{numbers.map((number, index) => (
 			<button key={index} className="donate__box-button"><p>{number}$</p></button>
 		))}
-		
 		</div>
 	);
   };

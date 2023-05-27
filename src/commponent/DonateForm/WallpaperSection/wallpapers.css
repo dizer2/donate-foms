@@ -1,0 +1,32 @@
+.popup__wallpaper {
+  width: 35%;
+  height: 100%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative; }
+  .popup__wallpaper-logo {
+    width: 200px;
+    height: 200px;
+    background-image: url(../../../img/logo.svg);
+    background-size: cover;
+    animation: logo 20s infinite; }
+@keyframes logo {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
+  .popup__wallpaper-close {
+    width: 35px;
+    height: 35px;
+    background-image: url(../../../img/close.svg);
+    background-size: cover;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin-top: 20px;
+    margin-right: 30px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=wallpapers.css.map */

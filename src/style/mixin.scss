@@ -1,3 +1,7 @@
+$venus: #FF6D60;
+$defult: #ffffff;
+
+
 @mixin font($color, $size, $weight, $line, $spacing, $top) {
 	font-family: 'Montserrat Alternates';
 	font-style: normal;

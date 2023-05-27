@@ -1,8 +1,9 @@
 import React from 'react'
-import ButtonMoney from './buttonMoney';
-import DonateForm from './donateForm';
+import DonateForms from './DonateForm/donateForms';
+import Wallpaper from './DonateForm/WallpaperSection/wallpaper';
 
-const Popup = () => {
+
+const Popup = ({title}) => {
 	const arrayMoney = [
 		100, 
 		500, 
@@ -28,26 +29,19 @@ const Popup = () => {
 		}
 		
 	]
-
 	
 
   return (
 	<div className="popup">
-		<div className="popup__donate-form">
-			<p className='donate__titel'>Support Armed Forces of span Ukraine</p>
-			<ButtonMoney numbers={arrayMoney}/>
-			<DonateForm donateInfo={donateInfo}/>
-			<button className="support__button">
-				<p>To support</p>
-			</button>
-			
-
-		</div>
+		<DonateForms 
+			arrayMoney={arrayMoney}
+			donateInfo={donateInfo}
+			title={title}
+		/>
 		
-		<div style={{backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/000/208/936/original/night-camping-vector.jpg`}} className="popup__wallpaper">
-			<div className="popup__wallpaper-logo"></div>
-			<div className="popup__wallpaper-close"></div>
-		</div>
+		<Wallpaper 
+			backgroundImage="https://static.vecteezy.com/system/resources/previews/000/208/936/original/night-camping-vector.jpg"
+		/>
 	</div>
   )
 }
