@@ -1,7 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap');
+@import './mixin.scss';
+
+$venus: #FF6D60;
+$defult: #ffffff;
+
+
+
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
 
 
+.App{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(112.52deg, #2D3772 0.46%, #221B32 27.53%, #6C2F4E 98.51%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.popup{
+		width: 90%;
+		height: 90%;
+		display: flex;
+
+		&__donate-form{
+			width: 65%;
+			height: 100%;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(16px);
+			padding: 0 35px;
+			@include display-center(center, center);
+			flex-direction: column;
+			.donate__titel{
+				width: 80%;
+				@include font(0, 40px, 700, 49px, 0em, 25px);
+				font-size: calc(18px + (36 - 12) * ((100vw - 300px) / (1600 - 300)));
+				line-height: calc(18px + (36 - 12) * ((100vw - 300px) / (1600 - 300))); ;
+				text-align: center;
+
+				&::first-letter{
+					color: $venus;
+				}
+
+			}
+			.donate__box{
+				width: auto;
+				height: auto;
+				flex-wrap: wrap;
+				@include display-center(flex-start, center);
+				margin-top: 35px;
+
+				&-button{
+					min-width: 150px;
+					height: 60px;
+					background: $defult;
+					border: 1px solid $venus;
+					box-shadow: 0px 6px 8px rgba(255, 109, 96, 0.1);
+					border-radius: 3px;
+					cursor: pointer;
+					@include display-center(center, center);
+					@include font(#333333, 32px, 400, 51px, 0em, 0px);
+					font-family: 'Acme';
+					padding: 0 15px;
+					margin: 10px;
+					transition: 0.4s;
+
+					&:hover{
+						background-color: $venus;
+						color: $defult;
+						transition: 0.4s;
+					}
+
+				}
+			}
+			.donate__form{
+				width: 100%;
+				height: 270px;
+				@include display-center(flex-start, center);
+				flex-direction: column;
+				overflow-y: auto;
+				margin: 20px 0;
+
+				
+				&::-webkit-scrollbar {
+					display: none;
+				  }
+
+				&-button{
+
+					background: #FFFFFF;
+					border: 1px solid $venus;
+					box-shadow: 0px 6px 8px rgba(255, 109, 96, 0.1);
+					border-radius: 3px;
+					@include display-center(flex-start, center);
+					@include font(#333333, 24px, 500, 30px, 0em, 0px);
+					margin: 20px 0;
+					cursor: pointer;
+					transition: 0.4s;
+					padding: 10px 20px;
+					min-width: 360px;
+
+					input{
+						width: 240px;
+						height: 100%;
+						border: none;
+						outline: none;
+						background-color: transparent;
+						color: #221B32;
+						@include font(#333333, 24px, 500, 30px, 0em, 0px);
+						margin-left: 10px;
+						cursor: pointer;
+
+						&::placeholder{
+							color: #333333;
+						}
+					}
+
+					img{
+						width: 35px;
+						height: 35px;
+					}
+
+					p{
+						margin-left: 10px;
+					}
+
+					&:hover{
+						background-color: $venus;
+						transition: 0.4s;
+						p{
+							color: $defult;
+						}
+						input{
+							color: $defult;
+							&::placeholder{
+								color: $defult;
+							}
+						}
+					}
+				}
+			}
+
+			.support__button{
+				width: 360px;
+				height: 60px;
+				background: $venus;
+				border: 1px solid $venus;
+				box-shadow: 0px 6px 8px rgba(255, 109, 96, 0.1);
+				border-radius: 3px;
+				@include display-center(center, center);
+				@include font(0, 24px, 600, 30px, 0em, 25px);
+				cursor: pointer;
+				transition: 0.4s;
+				&:hover{
+					border: 1px solid $venus;
+					background-color: transparent;
+					color: $venus;
+				}
+
+			}
+
+
+		}
+		&__wallpaper{
+			width: 35%;
+			height: 100%;
+			background-size: cover;
+			@include display-center(center, center);
+
+		}
+
+	}
+
+}

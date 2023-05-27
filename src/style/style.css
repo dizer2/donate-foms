@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(112.52deg, #2D3772 0.46%, #221B32 27.53%, #6C2F4E 98.51%);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .App .popup {
+    width: 90%;
+    height: 90%;
+    display: flex; }
+    .App .popup__donate-form {
+      width: 65%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(16px);
+      padding: 0 35px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column; }
+      .App .popup__donate-form .donate__titel {
+        width: 80%;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0em;
+        color: 0;
+        margin-top: 25px;
+        color: #ffffff;
+        font-size: calc(18px + (36 - 12) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(18px + (36 - 12) * ((100vw - 300px) / (1600 - 300)));
+        text-align: center; }
+        .App .popup__donate-form .donate__titel::first-letter {
+          color: #FF6D60; }
+      .App .popup__donate-form .donate__box {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        margin-top: 35px; }
+        .App .popup__donate-form .donate__box-button {
+          min-width: 150px;
+          height: 60px;
+          background: #ffffff;
+          border: 1px solid #FF6D60;
+          box-shadow: 0px 6px 8px rgba(255, 109, 96, 0.1);
+          border-radius: 3px;
+          cursor: pointer;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 51px;
+          letter-spacing: 0em;
+          color: #333333;
+          margin-top: 0px;
+          font-family: 'Acme';
+          padding: 0 15px;
+          margin: 10px;
+          transition: 0.4s; }
+          .App .popup__donate-form .donate__box-button:hover {
+            background-color: #FF6D60;
+            color: #ffffff;
+            transition: 0.4s; }
+      .App .popup__donate-form .donate__form {
+        width: 100%;
+        height: 270px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        margin: 20px 0; }
+        .App .popup__donate-form .donate__form::-webkit-scrollbar {
+          display: none; }
+        .App .popup__donate-form .donate__form-button {
+          background: #FFFFFF;
+          border: 1px solid #FF6D60;
+          box-shadow: 0px 6px 8px rgba(255, 109, 96, 0.1);
+          border-radius: 3px;
+          justify-content: flex-start;
+          align-items: center;
+          display: flex;
+          font-family: 'Montserrat Alternates';
+          font-style: normal;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0em;
+          color: #333333;
+          margin-top: 0px;
+          margin: 20px 0;
+          cursor: pointer;
+          transition: 0.4s;
+          padding: 10px 20px;
+          min-width: 360px; }
+          .App .popup__donate-form .donate__form-button input {
+            width: 240px;
+            height: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: #221B32;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            color: #333333;
+            margin-top: 0px;
+            margin-left: 10px;
+            cursor: pointer; }
+            .App .popup__donate-form .donate__form-button input::placeholder {
+              color: #333333; }
+          .App .popup__donate-form .donate__form-button img {
+            width: 35px;
+            height: 35px; }
+          .App .popup__donate-form .donate__form-button p {
+            margin-left: 10px; }
+          .App .popup__donate-form .donate__form-button:hover {
+            background-color: #FF6D60;
+            transition: 0.4s; }
+            .App .popup__donate-form .donate__form-button:hover p {
+              color: #ffffff; }
+            .App .popup__donate-form .donate__form-button:hover input {
+              color: #ffffff; }
+              .App .popup__donate-form .donate__form-button:hover input::placeholder {
+                color: #ffffff; }
+      .App .popup__donate-form .support__button {
+        width: 360px;
+        height: 60px;
+        background: #FF6D60;
+        border: 1px solid #FF6D60;
+        box-shadow: 0px 6px 8px rgba(255, 109, 96, 0.1);
+        border-radius: 3px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: 'Montserrat Alternates';
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: 0;
+        margin-top: 25px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.4s; }
+        .App .popup__donate-form .support__button:hover {
+          border: 1px solid #FF6D60;
+          background-color: transparent;
+          color: #FF6D60; }
+    .App .popup__wallpaper {
+      width: 35%;
+      height: 100%;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      display: flex; }
+
+/*# sourceMappingURL=style.css.map */

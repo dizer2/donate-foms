@@ -1,0 +1,32 @@
+@mixin font($color, $size, $weight, $line, $spacing, $top) {
+	font-family: 'Montserrat Alternates';
+	font-style: normal;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $line;
+	letter-spacing: $spacing;
+	color: $color;
+	margin-top: $top;
+	@if $color == 0 {
+		color: $defult;
+	}
+}
+
+
+@mixin display-center($jusifu, $aligitems){
+	@if $jusifu == 0 {
+		justify-content: flex-start;
+	}@else if(){
+		justify-content: $jusifu;
+	}
+	@if $aligitems == 0 {
+		align-items: flex-start;
+	}@else if(){
+		align-items: $aligitems;
+	}
+	display: flex;
+
+}
+
+
+
