@@ -37,16 +37,16 @@ const Popup = () => {
 			<p className='donate__titel'>Support Armed Forces of span Ukraine</p>
 			<ButtonMoney numbers={arrayMoney}/>
 			<DonateForm donateInfo={donateInfo}/>
-
 			<button className="support__button">
 				<p>To support</p>
 			</button>
+			
 
 		</div>
 		
 		<div style={{backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/000/208/936/original/night-camping-vector.jpg`}} className="popup__wallpaper">
-			
-
+			<div className="popup__wallpaper-logo"></div>
+			<div className="popup__wallpaper-close"></div>
 		</div>
 	</div>
   )
