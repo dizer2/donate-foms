@@ -1,10 +1,16 @@
 @import '../../../style/mixin.scss';
 
+.gpay-button{
+	width: 360px !important;
+	height: 60px !important;
+		
+}
+
 
 .popup__donate-form{
 	width: 65%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.1);
+	background: rgba(246, 227, 227, 0.1);
 	backdrop-filter: blur(16px);
 	padding: 0 35px;
 	@include display-center(center, center);
