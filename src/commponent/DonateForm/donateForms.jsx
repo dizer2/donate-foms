@@ -11,8 +11,6 @@ function DonateForms({arrayMoney, donateInfo, title}) {
 	  setInputValue(value);
 	};
 
-	
-
 
   return (
 	<div className="popup__donate-form">
