@@ -9,8 +9,9 @@ function DonateForms({arrayMoney, donateInfo, title}) {
 	const handleInputChange = (event) => {
 	  const value = event.target.value;
 	  setInputValue(value);
-	  console.log(value);
 	};
+
+	
 
 
   return (

@@ -1,6 +1,6 @@
 @import '../../../style/mixin.scss';
-.popup__wallpaper{
 
+.popup__wallpaper{
 	width: 35%;
 	height: 100%;
 	background-size: cover;
@@ -34,5 +34,24 @@
 		margin-right: 30px;
 		cursor: pointer;
 	}
+
+}
+
+
+@media screen and(max-width: 885px) {
+	.App .popup__wallpaper-logo{
+		width: 150px;
+		height: 150px;
+	}
+
+}
+
+
+@media screen and(max-width: 605px) {
+	.App{
+		.popup__wallpaper{
+			display: none;
+		}
+	} 
 
 }

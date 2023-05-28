@@ -3,7 +3,7 @@ import DonateForms from './DonateForm/donateForms';
 import Wallpaper from './DonateForm/WallpaperSection/wallpaper';
 
 
-const Popup = ({title}) => {
+const Popup = ({title, setIsVisible}) => {
 	const arrayMoney = [
 		100, 
 		500, 
@@ -12,11 +12,11 @@ const Popup = ({title}) => {
 	];
 
 	const donateInfo = [
-		// {
-		// 	id: "googlePay",
-		// 	img: "https://phandroid.com/wp-content/uploads/2015/09/new-google-wallet-icon.png",
-		// 	text: "Google pay"
-		// },
+		{
+			id: "googlePay",
+			img: "https://phandroid.com/wp-content/uploads/2015/09/new-google-wallet-icon.png",
+			text: "Google pay"
+		},
 		{
 			id: "paypal",
 			img: "https://cdn-icons-png.flaticon.com/512/174/174861.png",
@@ -41,6 +41,7 @@ const Popup = ({title}) => {
 		
 		<Wallpaper 
 			backgroundImage="https://static.vecteezy.com/system/resources/previews/000/208/936/original/night-camping-vector.jpg"
+			setIsVisible={setIsVisible}
 		/>
 	</div>
   )
